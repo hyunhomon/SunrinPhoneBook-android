@@ -1,0 +1,11 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Dark Theme -->
+
+    <!-- Base Application Theme -->
+    <style name="Base.Theme.SunrinPhoneBook" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+
+    <!-- Base Button -->
+</resources>
