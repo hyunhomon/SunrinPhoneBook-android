@@ -1,11 +1,13 @@
 package com.example.sunrinphonebook.start
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableStringBuilder
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
 import com.example.sunrinphonebook.R
 import com.example.sunrinphonebook.databinding.ActivityStartBinding
+import com.example.sunrinphonebook.login.LoginActivity
 import com.example.sunrinphonebook.start.model.Start
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -33,7 +35,9 @@ class StartActivity : AppCompatActivity() {
                 if(pos == 2) {
                     setText("시작하기")
                     setOnClickListener() {
-                        //
+                        startActivity(
+                            Intent(this@StartActivity, LoginActivity::class.java)
+                        )
                     }
                 } else {
                     setText("다음")

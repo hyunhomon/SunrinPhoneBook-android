@@ -2,4 +2,6 @@
     <string name="app_name">SunrinPhoneBook</string>
 
     <string name="next">다음</string>
+    <string name="login">로그인</string>
+    <string name="phone">전화번호</string>
 </resources>

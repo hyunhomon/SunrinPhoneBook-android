@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:paddingHorizontal="24dp"
+    android:paddingVertical="44dp"
+
+    android:theme="@style/BaseBackground"
+
+    tools:context=".login.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginVertical="60dp"
+
+        android:text="@string/login"
+
+        style="@style/BaseText"
+
+        />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_phone"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/BaseEditTextLayout"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/BaseEditText"
+
+            android:hint="전화번호"
+            android:inputType="number"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etl_pw"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        style="@style/BaseEditTextLayout"
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_pw"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            style="@style/BaseEditText"
+
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        style="@style/BaseButton"
+
+        android:text="로그인"
+
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_register"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginVertical="12dp"
+
+        android:text="계정이 없으신가요? 회원가입"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/pretendard_regular"
+
+        />
+
+</LinearLayout>

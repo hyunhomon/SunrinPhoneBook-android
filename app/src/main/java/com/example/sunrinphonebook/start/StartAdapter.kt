@@ -58,7 +58,7 @@ class StartAdapter : ListAdapter<Start, StartAdapter.ViewHolder>(DiffCallback) {
         }
     }
 
-    object DiffCallback : DiffUtil.ItemCallback<Start>() {
+    private object DiffCallback : DiffUtil.ItemCallback<Start>() {
         override fun areItemsTheSame(oldItem: Start, newItem: Start): Boolean {
             return oldItem == newItem
         }
